@@ -5,3 +5,6 @@
 !lib/**/*
 !*.md
 !package.json
+!*.podspec
+!ios
+!ios/**/*
