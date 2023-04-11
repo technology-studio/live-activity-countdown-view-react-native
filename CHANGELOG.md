@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.1...v1.0.2) (2023-04-11)
+
+
+### Bug fixes
+
+* edit `.npmignore` to exclude xcode project ([#38](https://github.com/technology-studio/live-activity-countdown-view-react-native/issues/38)) ([cd2df0f](https://github.com/technology-studio/live-activity-countdown-view-react-native/commit/cd2df0f2e9d6b4ca2ae61eee562b7a7b350e3f49))
+
 ## [1.0.1](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.0...v1.0.1) (2023-04-04)
 
 
