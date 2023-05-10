@@ -112,7 +112,7 @@ public struct LiveActivityCountdownWidgetExtensionLiveActivity: Widget {
                                     Label(context.attributes.buttonTitle, systemImage: "iphone.and.arrow.forward")
                                         .font(.body.bold())
                                 }
-                                .padding(.vertical, 4)
+                                .padding(.vertical, 2)
                                 .frame(maxWidth: .infinity)
                                 .background(
                                     RoundedRectangle(cornerRadius: 20)
@@ -121,6 +121,7 @@ public struct LiveActivityCountdownWidgetExtensionLiveActivity: Widget {
                                 )
                                 .foregroundColor(Color(hex: context.attributes.timerColor))
                             }
+                            .padding(.horizontal, 10)
                         }
                     }
                 } compactLeading: {
