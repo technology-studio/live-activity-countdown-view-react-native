@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.2...v1.0.3) (2023-05-12)
+
+
+### Bug fixes
+
+* remove hardcoded values for timer and button titles ([#82](https://github.com/technology-studio/live-activity-countdown-view-react-native/issues/82)) ([5771414](https://github.com/technology-studio/live-activity-countdown-view-react-native/commit/5771414b655ddc8db93dd944153315da300a6407))
+
 ## [1.0.2](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.1...v1.0.2) (2023-04-11)
 
 
