@@ -18,12 +18,14 @@ public struct LiveActivityCountdownWidgetExtensionAttributes: ActivityAttributes
     // Fixed non-changing properties about your activity go here!
     public var title: String
     public var timerTitle: String
+    public var buttonTitle: String
     public var imageName: String
     public var timerColor: String?
     public var timer: ClosedRange<Date> = Date(timeIntervalSinceNow: 0)...Date(timeIntervalSinceNow: 0)
-    public init(title: String, timerTitle: String, secondsUntilEnd: Double, timerColor: String?, imageName: String?) {
+    public init(title: String, timerTitle: String, buttonTitle: String, secondsUntilEnd: Double, timerColor: String?, imageName: String?) {
         self.title = title
         self.timerTitle = timerTitle
+        self.buttonTitle = buttonTitle
         self.timer = Date()...Date(timeIntervalSinceNow: secondsUntilEnd)
         self.timerColor = timerColor ?? nil
         self.imageName = imageName ?? "AppIconLiveActivity"
@@ -58,7 +60,7 @@ public struct LiveActivityCountdownWidgetExtensionLiveActivity: Widget {
                             }
                             Spacer()
                             VStack(alignment: .trailing) {
-                                Text("Time to unlock")
+                                Text(context.attributes.timerTitle)
                                 Text(timerInterval: context.attributes.timer, countsDown: true)
                                     .multilineTextAlignment(.trailing)
                                     .foregroundColor(Color(hex: context.attributes.timerColor))
@@ -97,7 +99,7 @@ public struct LiveActivityCountdownWidgetExtensionLiveActivity: Widget {
                                         .fixedSize(horizontal: false, vertical: true)
                                 }
                                 VStack(alignment: .trailing) {
-                                    Text("Time to unlock")
+                                    Text(context.attributes.timerTitle)
                                     Text(timerInterval: context.attributes.timer, countsDown: true)
                                         .multilineTextAlignment(.trailing)
                                         .foregroundColor(Color(hex: context.attributes.timerColor))
@@ -107,10 +109,10 @@ public struct LiveActivityCountdownWidgetExtensionLiveActivity: Widget {
                                 Button {
                                     
                                 } label: {
-                                    Label("Open App", systemImage: "iphone.and.arrow.forward")
+                                    Label(context.attributes.buttonTitle, systemImage: "iphone.and.arrow.forward")
                                         .font(.body.bold())
                                 }
-                                .padding(.vertical, 4)
+                                .padding(.vertical, 2)
                                 .frame(maxWidth: .infinity)
                                 .background(
                                     RoundedRectangle(cornerRadius: 20)
@@ -119,6 +121,7 @@ public struct LiveActivityCountdownWidgetExtensionLiveActivity: Widget {
                                 )
                                 .foregroundColor(Color(hex: context.attributes.timerColor))
                             }
+                            .padding(.horizontal, 10)
                         }
                     }
                 } compactLeading: {
