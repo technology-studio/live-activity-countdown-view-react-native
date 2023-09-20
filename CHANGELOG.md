@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.3...v1.0.4) (2023-09-20)
+
+
+### Bug fixes
+
+* recreate yarn.lock ([#247](https://github.com/technology-studio/live-activity-countdown-view-react-native/issues/247)) ([02f85fc](https://github.com/technology-studio/live-activity-countdown-view-react-native/commit/02f85fcb8736d5a6923700205ca3e70cb29b50b8))
+
 ## [1.0.3](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.2...v1.0.3) (2023-05-12)
 
 
