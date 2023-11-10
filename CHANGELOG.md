@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.4...v1.1.0) (2023-11-10)
+
+
+### Features
+
+* migrate to flat eslint config ([#317](https://github.com/technology-studio/live-activity-countdown-view-react-native/issues/317)) ([7dc9e60](https://github.com/technology-studio/live-activity-countdown-view-react-native/commit/7dc9e604ff306c4427930c4e1c90046ac542ea3b))
+
 ## [1.0.4](https://github.com/technology-studio/live-activity-countdown-view-react-native/compare/v1.0.3...v1.0.4) (2023-09-20)
 
 
